@@ -198,6 +198,9 @@
 //
 // Heaters / Fans
 //
+#ifndef RAMPS_D8_PIN
+  #define RAMPS_D7_PIN   7
+#endif
 #ifndef MOSFET_D_PIN
   #define MOSFET_D_PIN  -1
 #endif
@@ -212,6 +215,7 @@
 #endif
 
 #define HEATER_0_PIN     RAMPS_D10_PIN
+#define HEATER_1_PIN     RAMPS_D7_PIN         // Hotend Added (issakovt)
 
 #if ENABLED(IS_RAMPS_EFB)                      // Hotend, Fan, Bed
   #define FAN_PIN        RAMPS_D9_PIN
